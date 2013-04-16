@@ -22,9 +22,9 @@ $this->load->view('includes/content');
                 } else {
                     $submenu_listing = '';
                 }
-              //  echo $submenu_listing;
+                //  echo $submenu_listing;
 
-                $li_out.='<li><a>' .$value['menu_description'] .'</a>'. $submenu_listing . '</li>';
+                $li_out.='<li><a>' . $value['menu_description'] . '</a>' . $submenu_listing . '</li>';
             }
             echo $li_out;
         }

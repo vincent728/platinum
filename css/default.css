@@ -29,7 +29,8 @@ float: left;
 }
 #menu li:hover ul{
     display: block;
-    position: absolute;
+    position: relative;
+    margin-top: 2px;
 }
 #menu li:hover li a:hover {
     background: #1e7c9a;

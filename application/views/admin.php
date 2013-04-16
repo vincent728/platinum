@@ -28,11 +28,8 @@ a:hover
 </head>
 <body>
 	<div>
-		<a href='<?php echo site_url('crud/customers_management')?>'>Customers</a> |
-		<a href='<?php echo site_url('crud/orders_management')?>'>Orders</a> |
-		<a href='<?php echo site_url('crud/products_management')?>'>Products</a> |
-		<a href='<?php echo site_url('crud/offices_management')?>'>Offices</a> | 
-		<a href='<?php echo site_url('crud/employees_management')?>'>Employees</a> |		 
+		<a href='<?php echo site_url('crud/menu_management')?>'>Customers</a> |
+			 
 		<a href='<?php echo site_url('crud/film_management')?>'>Films</a>
 	</div>
 	<div style='height:20px;'></div>  
