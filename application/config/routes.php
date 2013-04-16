@@ -39,6 +39,7 @@
 */
 
 $route['default_controller'] = "welcome";
+$route['^(?!backend|auth|examples|msasani|upanga|training|community).*'] = "welcome/$0";
 $route['404_override'] = '';
 
 

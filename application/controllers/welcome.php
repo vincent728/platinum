@@ -10,19 +10,18 @@ class Welcome extends CI_Controller {
 
          //controller function for render a view 
         
-        public function display($pagename) {
-            
-            return $this->load->view($pagename);
-            
-        }
+
         
         
         /**a testing page controller function*/
-        public function testingpage() {
+        public function testingpage($view) {
            /** insert the page name to test on
             * @param :pagename (eg $pagename= foldername/page-name)
             */
-            $this->display($pagename="welcome_message");
+            $this->load->view('header');
+            $this->load->view($view);
+            $this->load->view('footer');
+
         }
        
         
