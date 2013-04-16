@@ -1,1 +1,3 @@
-Deny from all
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|swf|uploads|js|css|robots\.txt)
+RewriteRule ^(.*)$ /welcome/index.php/$1 [L]
