@@ -23,6 +23,11 @@ class Welcome extends CI_Controller {
             $this->load->view('footer');
 
         }
+        
+        public function menu_loader() {
+            $data['results']=$this->site_model->menuloader();
+            $this->load->view('menus',$data);
+        }
        
         
 }

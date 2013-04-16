@@ -1,0 +1,36 @@
+/* 
+    Document   : default
+    Created on : Apr 16, 2013, 11:55:57 AM
+    Author     : vincent
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#menu ul{
+float: left;
+}
+#menu ul li{
+  list-style: none;  
+  display: inline;
+  padding: 5px;
+  position: relative;
+  float: left;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+    padding: 5px 15px 5px 15px;
+    background: #1e7c9a;
+    white-space: nowrap;
+
+}
+#menu li ul{
+    display: none;
+}
+#menu li:hover ul{
+    display: block;
+    position: absolute;
+}
+#menu li:hover li a:hover {
+    background: #1e7c9a;
+}
