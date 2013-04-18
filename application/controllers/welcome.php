@@ -4,7 +4,9 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		// $this->load->view('welcome_message');
+          $data['results']=$this->menu_m->getMenu();
+            $this->load->view('menus',$data);
 	}
         
 
@@ -25,7 +27,7 @@ class Welcome extends CI_Controller {
         }
         
         public function menu_loader() {
-            $data['results']=$this->site_model->menuloader();
+            $data['results']=$this->menu_m->getMenu();
             $this->load->view('menus',$data);
         }
        

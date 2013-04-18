@@ -28,9 +28,10 @@ a:hover
 </head>
 <body>
 	<div>
-		<a href='<?php echo site_url('crud/menu_management')?>'>Customers</a> |
+		<a href='<?php echo site_url('crud/menu_management')?>'>menus</a> |
+		<a href='<?php echo site_url('crud/submenu_management')?>'>Submenus</a> |
 			 
-		<a href='<?php echo site_url('crud/film_management')?>'>Films</a>
+		
 	</div>
 	<div style='height:20px;'></div>  
     <div>
