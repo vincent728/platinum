@@ -32,8 +32,8 @@ class Crud extends CI_Controller {
 
 	 function submenu_management() {
             $gcrud=new grocery_CRUD();
-            $gcrud->set_table('menu');
-            $gcrud->set_relation('menu_id','submenu','menu_description');
+            $gcrud->set_table('submenu');
+            $gcrud->set_relation('menu_id','menu','menu_description');
             $data=$gcrud->render();
             $this->_example_output($data);
         }
