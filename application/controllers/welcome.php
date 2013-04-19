@@ -1,12 +1,18 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
+    
+    
+        public function __construct()
+        {
+            parent::__construct();
+            $this->load->model('site_model');
+        }
 
 	public function index()
 	{
-		// $this->load->view('welcome_message');
-          $data['results']=$this->menu_m->getMenu();
-            $this->load->view('menus',$data);
+		$this->load->view('welcome_message');
+          
 	}
         
 
@@ -27,8 +33,9 @@ class Welcome extends CI_Controller {
         }
         
         public function menu_loader() {
-            $data['results']=$this->menu_m->getMenu();
+            $data['results']=$this->site_model->menuloader();
             $this->load->view('menus',$data);
+
         }
        
         
