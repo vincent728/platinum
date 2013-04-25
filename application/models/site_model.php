@@ -11,7 +11,7 @@ class Site_model extends CI_Model{
      * @return results
      */
     public function menuloader() {
-       $sql="select* from menu order by menu_order asc";
+       $sql="select * from menu order by menu_order asc";
        $results=$this->db->query($sql);
        return $results;
     }
@@ -25,7 +25,7 @@ class Site_model extends CI_Model{
     public function getsubmenu($id) {
         $sql="select distinct submenu_id,submenu_description,menu_description from submenu,menu where 
             menu.menu_id=submenu.menu_id and
-            submenu.menu_id='$id'";
+            submenu.menu_id='$id' order by submenu_order asc";
         $results=$this->db->query($sql);
         
         return $results;

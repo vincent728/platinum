@@ -1,37 +1,40 @@
-/* 
-    Document   : default
-    Created on : Apr 16, 2013, 11:55:57 AM
-    Author     : vincent
-    Description:
-        Purpose of the stylesheet follows.
-*/
-#menu ul{
-float: left;
+ul {
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-#menu ul li{
-  list-style: none;  
-  display: inline;
-  padding: 5px;
-  position: relative;
-  float: left;
+ul li {
+    display: block;
+    position: relative;
+    float: left;
 }
-#menu ul li a{
+li ul {
+    display: none;
+}
+ul li a {
+    display: block;
     text-decoration: none;
     color: #ffffff;
     border-top: 1px solid #ffffff;
     padding: 5px 15px 5px 15px;
     background: #1e7c9a;
+    margin-left: 1px;
     white-space: nowrap;
-
 }
-#menu li ul{
-    display: none;
+ul li a:hover {
+background: #3b3b3b;
 }
-#menu li:hover ul{
+li:hover ul {
     display: block;
-    position: relative;
-    margin-top: 2px;
+    position: absolute;
 }
-#menu li:hover li a:hover {
+li:hover li {
+    float: none;
+    font-size: 11px;
+}
+li:hover a { background: #3b3b3b; }
+li:hover li a:hover {
     background: #1e7c9a;
 }

@@ -16,7 +16,7 @@ $this->load->view('includes/content');
 
                     $sub_li_out = '';
                     foreach ($submenu_results->result_array() as $rows) {
-                        $sub_li_out.='<li>' . anchor('', $title = $rows['submenu_description']) . '</li>';
+                        $sub_li_out.='<li>' . anchor('pages/functio/', $title = $rows['submenu_description']) . '</li>';
                     }
                     $submenu_listing = '<ul>' . $sub_li_out . '</ul>';
                 } else {
@@ -24,7 +24,7 @@ $this->load->view('includes/content');
                 }
                 //  echo $submenu_listing;
 
-                $li_out.='<li><a>' . $value['menu_description'] . '</a>' . $submenu_listing . '</li>';
+                $li_out.='<li><a href="home.html">' . $value['menu_description'] . '</a>' . $submenu_listing . '</li>';
             }
             echo $li_out;
         }
