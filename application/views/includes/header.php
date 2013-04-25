@@ -3,8 +3,9 @@
     <head>
         <base href ="<?php echo base_url(); ?>" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link href="css/default.css" rel="stylesheet"/>
-
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
     </head>
 
         

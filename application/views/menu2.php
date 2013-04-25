@@ -4,7 +4,7 @@ $this->load->view('includes/content');
 ?>
 <div id="menu">
 
-    <ul class="nav">
+    <ul>
         <?php
         if ($results->num_rows() > 0) {
             $li_out = '';
@@ -15,17 +15,16 @@ $this->load->view('includes/content');
                 if ($submenu_results->num_rows() > 0) {
 
                     $sub_li_out = '';
-                    // $sub_li_out = '<li class="dropdown">';
                     foreach ($submenu_results->result_array() as $rows) {
-                        $sub_li_out.='<li class="">' . anchor('pages/functio/', $title = $rows['submenu_description'],$attrib=array('class'=>'dropdown-toggle','data-toggle'=>'dropdown')) . '</li>';
+                        $sub_li_out.='<li>' . anchor('pages/functio/', $title = $rows['submenu_description']) . '</li>';
                     }
-                    $submenu_listing = '<ul class='. '"dropdown-menu"'.'>' . $sub_li_out . '</ul>';
+                    $submenu_listing = '<ul>' . $sub_li_out . '</ul>';
                 } else {
                     $submenu_listing = '';
                 }
                 //  echo $submenu_listing;
 
-                $li_out.='<li><a href="" >' . $value['menu_description'] . '</a>' . $submenu_listing . '</li>';
+                $li_out.='<li><a href="">' . $value['menu_description'] . '</a>' . $submenu_listing . '</li>';
             }
             echo $li_out;
         }
